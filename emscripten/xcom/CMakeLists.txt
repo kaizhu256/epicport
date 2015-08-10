@@ -47,11 +47,12 @@ file (GLOB_RECURSE YAML_SRC
 
 include_directories(
   "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/"
+  "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/boost-1.58.0/include/"
   "${CMAKE_CURRENT_SOURCE_DIR}/3rdparty/yaml-cpp-0.5.0/include/"
   "${ROOT}/native/includes/"
 )
 
-add_executable(openxcom 
+add_executable(openxcom
   ${SRC}
   ${YAML_SRC}
 )
